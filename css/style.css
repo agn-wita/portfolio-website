@@ -1,0 +1,181 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .96rem;
+    color: #404040;
+    line-height: 1.6;
+}
+
+/* ================typography================= */
+
+h1,
+h2 {
+    font-weight: 700; 
+}
+
+h1 {
+    color: white;
+}
+
+strong {
+    font-weight: 700;
+    color: yellow;
+}
+
+p strong {
+    color: #404040;
+}
+
+.banner-title {
+    font-size: 1.44rem;
+}
+
+.banner-subtitle,
+.col h2 {
+    font-size: 1.08rem;
+}
+
+.banner-subtitle {
+    color: white;
+    margin-top: 0;
+}
+
+.btn {
+    color: black;
+    font-weight: 700;
+    margin-bottom: 2em;
+}
+
+.btn-banner {
+    padding: .5em 1.8em;
+    background-color: yellow;
+    justify-self: start;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ================header main footer================= */
+
+.grid {
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(0, 500px) minmax(1em, 1fr);
+    grid-column-gap: .7em;
+}
+
+
+@media (min-width: 600px) {
+    .grid {
+        grid-template-columns: minmax(1em, 1fr) repeat(3, minmax(180px, 320px)) minmax(1em, 1fr);
+    }
+}
+
+/* ================main-content================= */
+.banner {
+    background-image: url(../img/home-page.jpg), linear-gradient(to right, rgb(26, 26, 26), rgb(247, 246, 246));
+    background-color: #656565;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner > * {
+    grid-column: 2 / -2;
+}
+
+@media (min-width: 600px) {
+    .banner > * {
+        grid-column: 2 / 4;
+    }
+
+    .banner {
+        padding: 3em 0;
+    }
+}
+
+.columns {
+    padding: 1em 0;
+}
+
+.col {
+    grid-column: 2 / -2;  
+}
+
+@media (min-width: 600px) {
+    .col {
+        grid-column: span 1;
+    }
+
+    .col:first-child {
+        grid-column: 2 / span 1;
+    }
+}
+
+/* ================columns================= */
+.columns {
+    text-align: center;
+}
+
+/* ================footer================= */
+.footer {
+    text-align: center;
+}
+
+footer {
+    background-color: gainsboro;
+    padding: 1em 0;
+    grid-template-areas: 
+    ". main ."
+    ". social .";
+}
+
+.footer-main,
+.footer-social-media-list {
+    grid-column: 2 / -2;
+}
+
+.footer-social-media-list {
+    /* order: -1; */
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-bottom: 0;
+    /* border: 1px solid red; */
+    grid-area: social;
+}
+
+.social-item {
+    /* border: 1px solid red; */
+    margin-right: 1.3em;
+}
+
+.link {
+    color: #404040;
+    font-size: 1.6em;
+    margin-right: .2em;
+}
+
+.link:hover,
+.btn-banner:hover {
+    color: rgb(156, 156, 156)
+}
+
+.footer-main {
+    opacity: .6;
+    grid-area: main;
+
+}
+
+.footer-small-par {
+    font-size: .6rem;
+}
+
+@media (min-width: 600px) {
+    footer {
+        grid-template-areas: 
+        ". main main social .";
+    }
+}

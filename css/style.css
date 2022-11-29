@@ -58,6 +58,13 @@ a {
     text-decoration: none;
 }
 
+.surname {
+    font-size: 2rem;
+    font-weight: 700;
+    color: gray;
+    text-decoration-line: underline overline;
+}
+
 /* ================header main footer================= */
 
 .grid {
@@ -185,4 +192,63 @@ footer {
     .footer-main {
         text-align: left;
     }
+}
+
+/* ================navigation menu================= */
+.header {
+    background-color: black;
+}
+
+.header-content {
+    display: flex;
+    grid-column: 2 / -2;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: solid 3px greenyellow;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: yellow;
+}
+
+.nav {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
+    transform: translateX(0);
+}
+
+.navigation-open {
+    transform: translateX(-100%);
+}
+
+.close-nav {
+    border: 0;
+    background: 0;
+    color: yellow;
+    font-size: 1.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding: .3em;
+    position: absolute;
 }

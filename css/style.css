@@ -209,7 +209,7 @@ footer {
     list-style: none;
     margin: 0;
     padding: 0;
-    border: solid 3px greenyellow;
+    /* border: solid 3px greenyellow; */
     height: 100%;
     align-items: center;
     justify-content: space-around;

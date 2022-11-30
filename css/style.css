@@ -236,13 +236,15 @@ footer {
     bottom: 0;
     left: 100%;
     transform: translateX(0);
+    transition: transform 300ms;
 }
 
 .navigation-open {
     transform: translateX(-100%);
 }
 
-.close-nav {
+.close-nav,
+.open-nav {
     border: 0;
     background: 0;
     color: yellow;
@@ -250,5 +252,12 @@ footer {
     font-weight: 700;
     cursor: pointer;
     padding: .3em;
+}
+
+.close-nav {
     position: absolute;
+}
+
+.open-nav {
+    margin-left: auto;
 }

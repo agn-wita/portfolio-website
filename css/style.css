@@ -261,3 +261,27 @@ footer {
 .open-nav {
     margin-left: auto;
 }
+
+@media (min-width: 600px) {
+    .open-nav,
+    .close-nav {
+        display: none;
+    }
+
+    .nav {
+        position: initial;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .nav-item {
+        margin-left: 2em;
+    }
+
+    .nav-link {
+        font-size: 1.3rem;
+    }
+}

@@ -313,3 +313,42 @@ footer {
 .main-about {
     padding: 2em 0;
 }
+
+/* ================about me large screen================= */
+@media (min-width: 600px) {
+
+    .about-img {
+        grid-column: 2 / span 1;
+    }
+
+    .about-txt {
+        grid-column: 3 / span 2;
+    }
+
+    /* .about-title {
+        grid-area: h1about;
+    }
+    .about-subtitle {
+        grid-area: pabout;
+    }
+
+    .about-img {
+        grid-area: img;
+    }
+
+    .about-txt {
+        grid-area: txt;
+    }
+
+    .main-about {
+        grid-template-areas: 
+        ". h1about h1about h1about ."
+        ". pabout pabout pabout ."
+        ". img txt txt ."
+        ". . txt txt .";
+    } */
+
+    .col-subtitle:first-child {
+        margin-top: 0;
+    }
+}

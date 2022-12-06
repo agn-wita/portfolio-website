@@ -13,10 +13,11 @@ img {
     display: block;
 }
 
-.about-img {
+.sub-img {
     height: 360px;
     object-fit: cover;
     box-shadow: 5px 5px 0px rgb(73, 73, 73), 10px 10px 0px rgb(165, 136, 40);
+    margin-bottom: 1em;
 }
 
 /* ================typography================= */
@@ -37,7 +38,7 @@ h2 {
     font-size: 1.3rem;
 }
 
-.about-title {
+.sub-title {
     color: #404040;
     justify-self: center;
 }
@@ -51,13 +52,13 @@ p strong {
     color: #404040;
 }
 
-.about-title,
-.about-subtitle {
+.sub-title,
+.sub-subtitle {
     grid-column: 2/-2;
     text-align: center;
 }
 
-.about-title::after {
+.sub-title::after {
     content: "";
     display: block;
     width: 100%;
@@ -335,49 +336,33 @@ footer {
 }
 
 /* ================about me small screen================= */
-.main-about > * {
+.main-sub > * {
     grid-column: 2/-2;
 }
 
-.main-about {
+.main-sub {
     padding: 2em 0;
 }
 
 /* ================about me large screen================= */
 @media (min-width: 600px) {
 
-    .about-img {
+    .sub-img {
         grid-column: 2 / span 1;
     }
 
-    .about-txt {
+    .sub-txt {
         grid-column: 3 / span 2;
     }
 
-    /* .about-title {
-        grid-area: h1about;
-    }
-    .about-subtitle {
-        grid-area: pabout;
-    }
-
-    .about-img {
-        grid-area: img;
-    }
-
-    .about-txt {
-        grid-area: txt;
-    }
-
-    .main-about {
-        grid-template-areas: 
-        ". h1about h1about h1about ."
-        ". pabout pabout pabout ."
-        ". img txt txt ."
-        ". . txt txt .";
-    } */
+ 
 
     .col-subtitle:first-child {
         margin-top: 0;
     }
+}
+
+/* ================contact large screen================= */
+@media (min-width: 600px) {
+
 }

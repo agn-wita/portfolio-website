@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header grid">
+        <div class="header-content">
+            <a class="header-logo" href="index.html"><span class="surname">AWita</span></a>
+            <button aria-label="Open navigation" class="open-nav">&#9776;</button>
+
+            <nav class="nav">
+                <button aria-label="Close navigation" class="close-nav">&times;</button>
+                <ul class="nav-list">
+                    <li class="nav-item home"><a href="index.html" class="nav-link home">home</a></li>
+                    <li class="nav-item about"><a href="about-me.html" class="nav-link about">about</a></li>
+                    <li class="nav-item contact"><a href="contact.html" class="nav-link contact">contact</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+
+    <main class="main-about grid">
+        <h1 class="about-title">Contact</h1>
+        <p class="about-subtitle">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+        <img src="img/contact.jpg" alt="" class="about-img">
+        <div class="about-txt">
+            <h2 class="col-subtitle">h2 lorem ipsum</h2>
+            <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+        </div>
+
+        <form action="/success.html" method="post">
+            <label for="fname">First name</label>
+            <input id="fname" type="text" required>
+            <br>
+            <label for="email">Email</label>
+            <input id="email" type="email" required>
+            <br>
+            <label for="message">Message</label>
+            <input id="message" type="text">
+            <br>
+            </form>
+
+    </main>
+
+    <footer class="grid">
+        
+        <div class="footer footer-main">
+            <!-- <img src="#" alt="logo" class="img-logo-footer"> -->
+            <p class="footer-logo"><span class="surname">AWita</span></p>
+            <p>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.</p>
+            <p class="footer-small-par">© AW 2022</p>
+        </div>
+
+        <ul class="footer-social-media-list">
+            <li class="social-item linkedin-item"><a href="#" class="link linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li class="social-item github-item"><a href="#" class="link github"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

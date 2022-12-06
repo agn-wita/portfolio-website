@@ -39,6 +39,7 @@ h2 {
 
 .about-title {
     color: #404040;
+    justify-self: center;
 }
 
 strong {
@@ -54,6 +55,16 @@ p strong {
 .about-subtitle {
     grid-column: 2/-2;
     text-align: center;
+}
+
+.about-title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 35px;
+    background: yellow;
+    margin-top: -30px;
+    margin-left: 10px;
 }
 
 .col-subtitle::after,
@@ -87,7 +98,7 @@ p strong {
 
 .btn-banner {
     padding: .5em 1.8em;
-    background-color: yellow;
+    background-color: rgb(165, 136, 40);
     justify-self: start;
 }
 
@@ -101,7 +112,6 @@ a {
     color: gray;
     text-decoration-line: underline overline;
 }
-
 /* ================header main footer================= */
 
 .grid {

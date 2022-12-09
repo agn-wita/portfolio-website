@@ -6,6 +6,7 @@ body {
     font-size: .96rem;
     color: #404040;
     line-height: 1.6;
+    min-width: 300px;
 }
 
 img {
@@ -94,12 +95,24 @@ p strong {
 .btn {
     color: black;
     font-weight: 700;
+    letter-spacing: 1px;
     margin-bottom: 2em;
+    padding: .5em 1.8em;
+    background-color: rgb(165, 136, 40);
+    border: 0;
+    cursor: pointer;
+    transition: transform 250ms;
+    transform: scale(1);
+    border-radius: 2px;
+}
+
+.btn:hover,
+.btn:focus {
+    background: orange;
+    transform: scale(1.1);
 }
 
 .btn-banner {
-    padding: .5em 1.8em;
-    background-color: rgb(165, 136, 40);
     justify-self: start;
 }
 
@@ -210,11 +223,6 @@ footer {
     color: #404040;
     font-size: 1.6em;
     margin-right: .2em;
-}
-
-.link:hover,
-.btn-banner:hover {
-    color: rgb(156, 156, 156)
 }
 
 .footer-main {
@@ -355,8 +363,6 @@ footer {
         grid-column: 3 / span 2;
     }
 
- 
-
     .col-subtitle:first-child {
         margin-top: 0;
     }
@@ -364,5 +370,65 @@ footer {
 
 /* ================contact large screen================= */
 @media (min-width: 600px) {
+    .sub-img-con,
+    .sub-txt-con  {
+        grid-column: 2/3;
+        }
 
+    .sub-img-con {
+        margin: 0;
+    }
+
+    .sec-form {
+        grid-column: 3 / span 2;
+        border: solid red 2px;
+    }
+
+    .sub-txt-con {
+        order: 2;
+    }
+
+    .sub-img-con {
+        min-height: 200px;
+        object-fit: cover;
+        margin-bottom: 0;
+    }
+
+    .btn-send {
+        margin-bottom: 0;
+    }
+}
+
+/* ================contact form================= */
+.form-contact {
+    border: solid red 2px;
+    display: grid;
+}
+
+label {
+    font-weight: 700;
+    color: grey;
+    margin-bottom: 0;
+}
+
+input,
+textarea
+ {
+    width: 100%;
+    padding: .5em;
+    border-radius: 2px;
+    font-family: inherit;
+    border: grey solid 1px;
+    margin-bottom: .7em;
+}
+
+.btn-send {
+   margin-left: auto;
+   /* justify-self: end; */
+   margin-bottom: 0;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
 }

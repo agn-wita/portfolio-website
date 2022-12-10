@@ -12,10 +12,12 @@ body {
 img {
     max-width: 100%;
     display: block;
+    margin-bottom: 1em;
 }
 
-.sub-img {
-    height: 360px;
+.sub-img,
+.sub-img-con {
+    /* height: 360px; */
     object-fit: cover;
     box-shadow: 5px 5px 0px rgb(73, 73, 73), 10px 10px 0px rgb(165, 136, 40);
     margin-bottom: 1em;
@@ -375,13 +377,10 @@ footer {
         grid-column: 2/3;
         }
 
-    .sub-img-con {
-        margin: 0;
-    }
-
     .sec-form {
         grid-column: 3 / span 2;
-        border: solid red 2px;
+        /* border: solid red 2px; */
+        grid-row: span 2;
     }
 
     .sub-txt-con {
@@ -397,11 +396,15 @@ footer {
     .btn-send {
         margin-bottom: 0;
     }
+
+    .col-subtitle-con {
+        margin-top: 1em;
+    }
 }
 
 /* ================contact form================= */
 .form-contact {
-    border: solid red 2px;
+    /* border: solid red 2px; */
     display: grid;
 }
 
@@ -422,13 +425,37 @@ textarea
     margin-bottom: .7em;
 }
 
-.btn-send {
-   margin-left: auto;
-   /* justify-self: end; */
-   margin-bottom: 0;
-}
-
 textarea {
     resize: none;
     height: 100px;
+}
+
+@media (min-width: 600px) {
+    .form-contact {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: .5em;
+        grid-auto-flow: dense;
+    }
+
+    .fname-label,
+    .fname-input {
+        grid-column: 1;
+    }
+
+    .email-label,
+    .email-input {
+        grid-column: 2;
+    }
+
+    .message-label,
+    .message-input {
+        grid-column: span 2;
+    }
+
+    .btn-send {
+        grid-column: 2;
+        /* margin-left: auto; */
+        justify-self: end;
+        margin-bottom: 0;
+     }
 }

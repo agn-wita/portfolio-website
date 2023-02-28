@@ -1,7 +1,8 @@
+# portfolio-website
+
 Project of fully responsive website that can be used as personal portfolio. The page contains 3 sub pages linking to each other: home, about, contact. Contact page contain simple contact form to send. Used Javascript code to open and close navigation 
 
-##
-HTML 
+## HTML 
 HOME PAGE 
 - 2 different Google fonts
 - logo on the left
@@ -19,8 +20,7 @@ CONTACT
 - column with image, sublitle and paragraph
 - form with 3 input fields: first name, email and message. The form is sended by clicking button SEND
 
-##
-CSS
+## CSS
 - min and max width, height
 - image as a background (size, position, blend mode)
 - CSS grid 
@@ -36,6 +36,5 @@ CSS
 - transform translate
 - position initial, absolute
 
-##
-JAVASCRIPT
+## JAVASCRIPT
 - open/close navigation menu (small screens) when the user click

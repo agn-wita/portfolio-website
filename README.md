@@ -1,46 +1,41 @@
-# portfolio-website
+Project of fully responsive website that can be used as personal portfolio. The page contains 3 sub pages linking to each other: home, about, contact. Contact page contain simple contact form to send. Used Javascript code to open and close navigation 
 
-## Portfolio page - Responsive Web Design
+##
+HTML 
+HOME PAGE 
+- 2 different Google fonts
+- logo on the left
+- menu for both large and small screens built of HTML lists. For small screen was used hamburger button with JS function of opening and closing
+- title, subtitles na CONTACT button with image background
+- 3 columns: about me, our skills, get in touch
+- footer with 2 columns including links to social media
 
-### 3 pages:
-- Homepage with navigation menu
-- Contact with form
-- Abous me
+ABOUT ME
+- title, subtitle and below
+- 2 columns: with image and second with 2 rows
 
-### Knowledge: 
-- CSS fundamentals
-- Thinking responsively
-- Stepping up style
-- Using Flex box for smaller parts
-- Grid for big picture (reusing the same grid over and over again)
+CONTACT
+- title, subtitle and below
+- column with image, sublitle and paragraph
+- form with 3 input fields: first name, email and message. The form is sended by clicking button SEND
 
-### Working on project - steps:
+##
+CSS
+- min and max width, height
+- image as a background (size, position, blend mode)
+- CSS grid 
+- display flex, flex-direction 
+- borders, margins, paddings
+- media queries
+- box shadows
+- justify-self, justify-contenet, text align, align-items
+- border, border-radious
+- coursor pointer
+- hover and focus
+- transform scale
+- transform translate
+- position initial, absolute
 
-#### 1. Analyzing the layouts of all 3 pages
-- looking for reuseable components between pages - layout columns&rows, big picture first than smaller pieces)
-- typography (titles, paragraphs, fonts sizes, colors, decorations)
-
-#### 2. Work on the homepage (HTML and CSS)
-- cutting layout for large screen (setting columns and rows)
-- writing html for home page (header, main, footer)
-- must be selectors in css
-- working on banner section for mobile (display grid, grid template columns)
-- typography (color, font size, font weight, line-height)
-- setting general display grid 
-- css for main section
-- css for footer; working with font awesome by social media links
-- setting up the grid for larger screens (banner, the rest)
-- setting up navigation for small screen with positioning
-- main menu for small screen (using position fixed)
-- making close navigation button
-- creating the 'open' state and adding JavaScript to close navigation
-- adding open button to navigation
-- styling navigation for large screen
-
-#### 3. Creating About me and Contact page
-- cutting layout for large screen (setting columns and rows)
-- writing html 
-- css for small screen
-- css for large screen
-- adding some effects on the images and content (box-shadows)
-- form to contact page only
+##
+JAVASCRIPT
+- open/close navigation menu (small screens) when the user click

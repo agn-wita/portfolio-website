@@ -38,3 +38,7 @@ CONTACT
 
 ## JAVASCRIPT
 - open/close navigation menu (small screens) when the user click
+
+## Stage of the project: completed
+
+Please note that this project is based on tutorial but the code was not copied. Every line of code was written by me according to my invention and with deep understanding of the issues.
